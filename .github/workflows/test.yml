@@ -1,0 +1,12 @@
+name: Testception!
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: 'Test job'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Uses itself'
+        # Special case with the repo itself 
+        uses: ./
