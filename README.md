@@ -14,3 +14,16 @@ jobs:
           command: 'my custom npm test --command'
 
 ```
+
+## Disclaimer
+This action is obviously not suited for production use, as it was a test I made. In order to run your own npm test please use:
+
+
+```yaml
+jobs:
+  test:
+    name: 'Npm test'
+    steps:
+      - run: 'npm test'
+
+```
