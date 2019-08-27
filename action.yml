@@ -1,0 +1,16 @@
+name: 'Simple NPM Test'
+author: 'Jo Colina'
+description: 'A simple npm test GitHub action'
+
+inputs:
+  command:
+    description: 'Custom test command (if different than npm test)'
+    required: false
+    default: 'npm test'
+
+using: 'docker'
+image: 'Dockerfile'
+
+branding:
+  icon: activity
+  color: red
